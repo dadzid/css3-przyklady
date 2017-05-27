@@ -1,0 +1,99 @@
+* {
+    background-color: burlywood;
+}
+
+p {
+   background-color:aqua; 
+}
+
+/*pseudo selektory*/ 
+
+#par1::before, #par1::after {
+    content:'*';
+    color: yellow;
+    font-size: 3em;
+}
+#par1::before, #par1::after {
+    content:'*';
+    color: blueviolet;
+    font-size: 3em 
+}
+    
+#par2::first-line {
+    color:red;
+}
+
+#par2:: first-letter {
+    font-size: 5em;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+    
+}
+li: before:{
+    content: '\0040';
+}
+
+
+
+a: visted {
+    color:crimson;
+   
+color: green;
+    font-size: 2em;
+}
+a: hover {
+   color:cornflowerblue
+       font-size: 3em;
+}
+
+a: active {
+    color:fuchsia;
+}
+
+input:focus {
+    background-color:dimgrey;
+}
+p:target {
+    background-color: darkred;
+}
+
+li: first-child {
+    font-size: 2em;
+}
+
+p span: only-child {
+    text-decoration: line-through;
+}
+
+div: empty {
+    width: 600px;
+    height: 200px;
+    background-color:coral;
+}
+li: nth-child(odd){
+    background-color: darkcyan;
+}
+
+input[title] {
+    background-color: darkorange;
+}
+
+input[type="text"] {
+    background-color: bisque;
+}
+input[title="tytul"] {
+    background-color: blanchedalmond;
+}
+
+input[title^="tytul"] {
+    background-color: forestgreen;
+}
+input[title$="tytyul"] {
+    background-color: burlywood;
+    
+}
